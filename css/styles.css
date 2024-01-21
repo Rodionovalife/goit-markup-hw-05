@@ -651,6 +651,7 @@ footer {
 .modal-input {
   width: 100%;
   height: 40px;
+  line-height: 2;
   border-radius: 4px;
   background-color: transparent;
   border: 1px solid rgba(46, 47, 66, 0.4);
@@ -710,6 +711,8 @@ footer {
   border: 1px solid rgba(46, 47, 66, 0.4);
   margin-right: 8px;
 }
+.visually-hidden {
+}
 
 .modal-checkbox-label {
   color: #8e8f99;
@@ -734,7 +737,7 @@ footer {
   fill: transparent;
 }
 
-..modal-policy-link {
+.modal-policy-link {
   color: #4d5ae5;
   font-family: Roboto;
   font-size: 12px;
@@ -753,8 +756,32 @@ footer {
   top: 50%;
   transform: translateY(-50%);
 }
-.modal-checkbox-input:checked + .modal-policy-link {
+.modal-checkbox-input:checked + .modal-policy-span {
   background-color: #404bbf;
   border: none;
   fill: #f4f4fd;
+}
+.button-modal-form {
+  background: #4d5ae5;
+  font-weight: 500;
+  color: #ffffff;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  cursor: pointer;
+  border-radius: 4px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  display: block;
+  margin: 0 auto;
+  padding: 16px 32px;
+  min-width: 169px;
+  height: 56px;
+  border: none;
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
 }
