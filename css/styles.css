@@ -737,7 +737,11 @@ footer {
     fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   fill: transparent;
 }
-
+.modal-checkbox-input:checked + .modal-checkbox-label .modal-policy-span {
+  background-color: #404bbf;
+  border: none;
+  fill: #f4f4fd;
+}
 .modal-policy-link {
   color: #4d5ae5;
   font-family: Roboto;
@@ -757,11 +761,7 @@ footer {
   top: 50%;
   transform: translateY(-50%);
 }
-.modal-checkbox-input:checked .modal-policy-span {
-  background-color: #404bbf;
-  border: none;
-  fill: #f4f4fd;
-}
+
 .button-modal-form {
   background: #4d5ae5;
   font-weight: 500;
